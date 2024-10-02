@@ -1,0 +1,83 @@
+{% extends "Layout.html" %}
+
+{% set active_page = "home" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+    <!--page content-->
+    <h1>Random Survey</h1>
+<br>
+<br>
+<br>
+<form action='/resp'>
+ <div class="container mt-3">
+    <div class="mb-3 mt-3">
+      <label for="firstname">First name</label>
+      <input type="name" class="form-control" id="name1" placeholder="Enter First name" name="name1" required>
+    </div>
+    <div class="mb-3">
+      <label for="lastname">Last name</label>
+      <input type="name" class="form-control" id="name2" placeholder="Enter Last name" name="name2" required>
+    </div>
+ </div>
+ <br>
+ <div class="container mt-3 id = genre" required>
+  <h2>What is your favorite game genre?</h2>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio1" name="genre" value="option1" checked>
+      <label class="form-check-label" for="radio1">Sandbox</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio2" name="genre" value="option2">
+      <label class="form-check-label" for="radio2">FPS</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio3" name="genre" value="option3" >
+      <label class="form-check-label" for="radio3">RPG</label>
+    </div>
+ </div>
+ <br>
+ <div class="container mt-3 id = tennis" required>
+  <h2>If Tyler and Lucy 1v1 in tennis, who would win?</h2>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio4" name="tennis" value="option4" checked>
+      <label class="form-check-label" for="radio4">Tyler</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio5" name="tennis" value="option5">
+      <label class="form-check-label" for="radio5">Lucy</label>
+    </div>
+ </div>
+ <br>
+ <div class="container mt-3 id = Solo" required>
+  <h2>How do you win solo showdown?</h2>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio6" name="Solo" value="option6" checked>
+      <label class="form-check-label" for="radio6">Bush camp</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio7" name="Solo" value="option7">
+      <label class="form-check-label" for="radio7">Aggro everyone</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio8" name="Solo" value="option8" >
+      <label class="form-check-label" for="radio8">edgar jump</label>
+    </div>
+	<div class="form-check">
+      <input type="radio" class="form-check-input" id="radio9" name="Solo" value="option9" >
+      <label class="form-check-label" for="radio9">Kit box on guy</label>
+    </div>
+	<div class="form-check">
+      <input type="radio" class="form-check-input" id="radio10" name="Solo" value="option10" >
+      <label class="form-check-label" for="radio10">Kenji fish slice</label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+ </div>
+</form>
+	
+	
+	
+	
+{% endblock %}
