@@ -12,7 +12,7 @@ def render_resp():
     name2 = request.args['name2']
     genre = request.args['genre']
     tennis = request.args['tennis']
-    solo = request.args['Solo']
+    Solo = request.args['Solo']
     reply1 = "hello " + name1 + " " + name2
     if genre == 'option1':
         reply2 = "Thats my favorite genre too, I like Minecraft!"
