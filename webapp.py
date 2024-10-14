@@ -35,7 +35,7 @@ def render_resp():
     return render_template('resp.html', r1 = reply1, r2 = reply2, r3 = reply3, r4 = reply4,  name1=name1, name2=name2, genre=genre, tennis=tennis, Solo=Solo)
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=False)
 
 
 #the fitnessgram pacer test is a multistage aerobic capacity test that progressively gets more difficult as it continues
