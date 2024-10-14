@@ -12,7 +12,7 @@ def render_resp():
     name2 = request.args['name2']
     genre = request.args['genre']
     tennis = request.args['tennis']
-    Solo = request.args['Solo']
+    solo = request.args['solo']
     reply1 = "hello " + name1 + " " + name2
     if genre == 'option1':
         reply2 = "Thats my favorite genre too, I like Minecraft!"
@@ -32,7 +32,7 @@ def render_resp():
         reply4 = "No, unless you are Frank this is an absolute garbage and unwinable way to play solo showdown D:"
     if Solo == 'option6':
         reply4 = "You are a villain, no one likes you, delete the game you trashcan"
-    return render_template('resp.html', r1 = reply1, r2 = reply2, r3 = reply3, r4 = reply4,  name1=name1, name2=name2, genre=genre, tennis=tennis, Solo=Solo)
+    return render_template('resp.html', r1 = reply1, r2 = reply2, r3 = reply3, r4 = reply4,  name1=name1, name2=name2, genre=genre, tennis=tennis, solo=solo)
 
 if __name__=="__main__":
     app.run(debug=False)
